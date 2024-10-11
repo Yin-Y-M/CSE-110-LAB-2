@@ -31,17 +31,13 @@ export function ClickCounter() {
 
 export function FavoriteNotes({ notes }: { notes: { id: number, title: string, content: string }[] }) {
 
-    // keep track of favorite notes
     const [favoriteNotes, setFavoriteNotes] = useState<string[]>([]);
 
-    // Toggle favorite status for a note
     const toggleFavorite = (noteTitle: string) => {
         setFavoriteNotes((prevFavorites) => {
-            // If the note is already in favorites, remove it
             if (prevFavorites.includes(noteTitle)) {
                 return prevFavorites.filter((title) => title !== noteTitle);
             } else {
-                // Otherwise, add it to the favorites
                 return [...prevFavorites, noteTitle];
             }
         });

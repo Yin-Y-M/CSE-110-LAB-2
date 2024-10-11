@@ -17,8 +17,8 @@
 
 .note-form input,
 .note-form textarea {
-    width: 100%;  /* Make both the input and textarea take full width */
-    box-sizing: border-box;  /* Ensure padding doesn't affect the width */
+    width: 100%;  
+    box-sizing: border-box;  
 }
 
 body {
@@ -75,7 +75,7 @@ body {
    }
 
    .heart-button.favorite {
-        color: red; /* When favorited */
+        color: red; 
         opacity: 0.8;
     }
    

@@ -125,7 +125,6 @@ function App() {
                     ))}
                 </div>
 
-                {/* Display the list of favorite notes */}
                 <div className="favorites-list">
                     <h3>List of favorites:</h3>
                     {favoriteNotes.length > 0 ? (
